@@ -1,8 +1,14 @@
-
+import javax.swing.*;
 
 public class Test {
 	public static void main(String args[]){
-		System.out.println("Hello git 2");
-		new gui();
+		
+		// google --> "java jframe"
+		 SwingUtilities.invokeLater(new Runnable() {
+	            public void run() {
+	                new gui();
+	            }
+	        }); // Erzeugt einen neuen Thread, der eine Instanz von TestJFrame erzeugt
+
 	}
 }
