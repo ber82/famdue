@@ -7,6 +7,6 @@ public class gui {
 		myFrame.setDefaultCloseOperation( JFrame.EXIT_ON_CLOSE );
 		myFrame.setSize(200,100);
 		myFrame.setVisible(true);
-		System.out.println("Test");
+		System.out.println("Test 2");
 	}	
 }
