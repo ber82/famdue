@@ -17,7 +17,7 @@ class Task extends TimerTask
   @Override public void run()
   {
    // System.out.println( "Make my day." );
-    mygui.setPos(x,y);
+    mygui.setPos(0,x,y);
     
     
     if (xDir == 0){

@@ -4,7 +4,7 @@ import javax.swing.*;
 
 public class gui {
 
-	JLabel text;
+	JLabel text[];
 	
 	public gui(){
 		// edit 25.02.2013 - check at home!!!
@@ -12,11 +12,17 @@ public class gui {
 		myFrame.setDefaultCloseOperation( JFrame.EXIT_ON_CLOSE );
 		
 		myFrame.setLayout(null);
-		text = new JLabel("Test");
-		text.setOpaque(true);
-		text.setBackground(new Color(220,220,200));
-		text.setBounds(10,10,40,20);
-		myFrame.add(text);
+		text = new JLabel[10];
+		
+		for (int i = 0; i < 10 ; i++){
+			text[i]=new JLabel("Test " + i);
+			text[i].setOpaque(true);
+			text[i].setBackground(new Color(220,220,200));
+			text[i].setBounds(10,10,40,20);
+			myFrame.add(text[i]);
+				
+		}
+		
 		myFrame.setSize(320,180);
 		myFrame.setVisible(true);
 		System.out.println("Test 2");
@@ -26,8 +32,8 @@ public class gui {
 		
 	}
 	
-	public void setPos(int x, int y){
-		text.setBounds(x,y,40,20);
+	public void setPos(int nr, int x, int y){
+		text[nr].setBounds(x,y,40,20);
 	}
 	
 }
