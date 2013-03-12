@@ -17,6 +17,7 @@ public class TimerTaskDemo
 
     // Start in einer Sekunde dann Ablauf alle 5 Sekunden
 		timer.schedule( new Task(mygui), 1000, 10 );
+
   }
   
   
